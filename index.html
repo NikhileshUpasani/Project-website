@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikhilesh's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #F3E5D8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .header-container {
+            background: #3A405A;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-container h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            z-index: 1;
+        }
+
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #A1C6EA;
+        }
+
+        .nav-container a {
+            text-decoration: none;
+            color: #3A405A;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: #F5CAC3;
+            transition: background 0.3s;
+        }
+
+        .nav-container a:hover {
+            background: #FFB4A2;
+        }
+
+        .content-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 60px 20px;
+        }
+
+        .section-card {
+            background: #EAE7DC;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-card h2 {
+            color: #3A405A;
+        }
+
+        .assignment-subsections {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .assignment-sub {
+            background: #fff8f0;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .assignment-sub h3 {
+            margin-top: 0;
+            color: #3A405A;
+        }
+
+        footer {
+            background: #3A405A;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Welcome to My Portfolio</h1>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#F3E5D8" d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,224C672,224,768,192,864,154.7C960,117,1056,75,1152,96C1248,117,1344,203,1392,240L1440,277.3V320H0Z"></path>
+        </svg>
+    </div>
+
+    <div class="nav-container">
+        <a href="#home">Home</a>
+        <a href="#assignments">Assignments</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+        <a href="#connect">Connect</a>
+    </div>
+
+    <div class="content-section">
+        <div class="section-card" id="home">
+            <h2>About Me</h2>
+            <p>I'm Nikhilesh Upasani, a passionate student pursuing Integrated M.Tech at Devi Ahilya Vishwavidyalaya, Indore. Explore my achievements, assignments, and creative projects here!</p>
+        </div>
+
+        <div class="section-card" id="assignments">
+            <h2>Assignments</h2>
+            <div class="assignment-subsections">
+                <div class="assignment-sub">
+                    <h3>Assignment 1</h3>
+                    <p>Internal 1 paper:-<a href=https://youtu.be/SsmTJtEwmKs>youtube</a></p>
+                </div>
+                <div class="assignment-sub">
+                    <h3>Assignment 2</h3>
+                    <p>Internal 2 paper:-<a href=https://youtu.be/jlZcVXVjbN8>youtube</a></p>
+                </div>
+                <div class="assignment-sub">
+                    <h3>Assignment 3</h3>
+                    <p>Internal 3 paper:-<a href=https://youtu.be/gmIB2jmXLKc>youtube</a></p>
+                </div>
+                <div class="assignment-sub">
+                    <h3>Assignment 4</h3>
+                    <p>End sem paper:-Part 1:-<a href=https://youtu.be/it7STpm3MOU>youtube</a>
+                        Part 2:-<a href=https://youtu.be/ITAQHzg8IK0>youtube</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-card" id="achievements">
+            <h2>Achievements</h2>
+            <p>Stay tuned for my proud achievements!</p>
+        </div>
+
+        <div class="section-card" id="projects">
+            <h2>Projects</h2>
+            <p>Exciting projects will be displayed soon!</p>
+        </div>
+
+        <div class="section-card" id="connect">
+            <h2>Connect with Me</h2>
+            <p>
+                <a href="https://github.com/" target="_blank">GitHub</a> |
+                <a href="https://linkedin.com/" target="_blank">LinkedIn</a> |
+                <a href="mailto:your.email@example.com">Gmail</a>
+            </p>
+            <p>Coding Profiles: GFG | LeetCode | HackerRank | CodeChef | Coding Ninja</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Nikhilesh Upasani. All rights reserved.
+    </footer>
+</body>
+</html>
